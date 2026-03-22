@@ -1,0 +1,427 @@
+.dashboard-root body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dashboard-root code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.dashboard-root .dashboard-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.dashboard-root .content {
+  flex-basis: 68%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  padding: 3% 2%;
+}
+
+.dashboard-root .funds {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.dashboard-root .funds p {
+  font-size: 0.8rem;
+  color: rgb(179, 179, 179);
+  margin-right: 8px;
+}
+
+.dashboard-root .btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.dashboard-root .btn-green {
+  background: #4caf50;
+}
+
+.dashboard-root .btn-blue {
+  background: #4184f3;
+}
+
+.dashboard-root .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.dashboard-root .col {
+  flex-basis: 48%;
+  text-align: left;
+}
+
+.dashboard-root .col span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.dashboard-root .section-icon {
+  transform: scale(0.8);
+  color: rgb(66, 56, 56);
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.dashboard-root .col span p {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.dashboard-root .table {
+  border: 1px solid #ddd;
+  padding: 5% 8%;
+}
+
+.dashboard-root .table .data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-root .table .data > * {
+  margin-bottom: 5%;
+}
+
+.dashboard-root .table .data p:first-child {
+  font-size: 1rem;
+  color: rgb(151, 151, 151);
+}
+
+.dashboard-root .imp {
+  font-size: 1.5rem;
+  color: #313131;
+}
+
+.dashboard-root .colored {
+  color: #4184f3;
+}
+
+.dashboard-root .table hr {
+  border: none;
+  background: #d1d1d1;
+  height: 0.5px;
+  margin-bottom: 5%;
+}
+
+.dashboard-root .commodity {
+  padding: 2% 8%;
+  text-align: center;
+}
+
+.dashboard-root .commodity p {
+  margin-bottom: 10%;
+  color: #c9c9c9;
+}
+
+.dashboard-root .btn-blue:hover {
+  background: #74a7fa;
+}
+
+.dashboard-root .btn-green:hover {
+  background: #7bdd7f;
+}
+
+.dashboard-root .title {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgb(71, 71, 71);
+  margin-bottom: 2%;
+}
+
+.dashboard-root .order-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-root .order-table tr {
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.dashboard-root .order-table th {
+  text-align: right;
+  padding: 15px 10px;
+  color: rgb(145, 145, 145);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.dashboard-root .order-table tr th:first-child,
+.dashboard-root .order-table tr td:first-child {
+  text-align: left;
+}
+
+.dashboard-root .order-table tr th:nth-child(1),
+.dashboard-root .order-table tr th:nth-child(4) {
+  border-right: 1px solid #f1f1f1;
+}
+
+.dashboard-root .order-table tr td:nth-child(1),
+.dashboard-root .order-table tr td:nth-child(4) {
+  border-right: 1px solid #f1f1f1;
+}
+
+.dashboard-root .order-table tr td:last-child {
+  font-size: 0.6rem;
+}
+
+.dashboard-root .order-table td {
+  padding: 10px 10px;
+  text-align: right;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(73, 73, 73);
+}
+
+.dashboard-root .align-left {
+  text-align: left;
+}
+
+.dashboard-root .order-table td.profit {
+  color: rgb(72, 194, 55);
+}
+
+.dashboard-root .order-table td.loss {
+  color: rgb(250, 118, 78);
+}
+
+.dashboard-root .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.dashboard-root .col {
+  flex-basis: 33%;
+}
+
+.dashboard-root .col h5 {
+  font-size: 1.8rem;
+  color: rgb(71, 71, 71);
+  font-weight: 300;
+}
+
+.dashboard-root .col h5 span {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.dashboard-root .col p {
+  font-size: 0.8rem;
+  color: rgb(153, 153, 153);
+  font-weight: 300;
+  margin-top: 2%;
+}
+
+.dashboard-root .row .col:last-child h5 {
+  color: rgb(72, 194, 55);
+}
+
+.dashboard-root .item:hover {
+  cursor: pointer;
+}
+
+.dashboard-root .menu-container {
+  flex-basis: 68%;
+  height: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-root .logo {
+  width: 30px;
+  height: 20px;
+}
+
+.dashboard-root .menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dashboard-root .menus ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-root .menus li {
+  display: inline-block;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+.dashboard-root .menu {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(70, 70, 70);
+}
+
+.dashboard-root .menu.selected {
+  color: rgb(245, 104, 52);
+}
+
+.dashboard-root .profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 20px;
+}
+
+.dashboard-root .profile .avatar {
+  width: 30px;
+  height: 30px;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(221, 139, 221);
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  display: flex;
+  background: rgb(252, 229, 252);
+  margin-right: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.dashboard-root .profile .username {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.dashboard-root .dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 120px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  z-index: 999;
+}
+
+.dashboard-root .logout-btn {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.dashboard-root .logout-btn:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.dashboard-root hr {
+  border-left: 0.8px solid rgb(243, 242, 242);
+  height: 30px;
+}
+
+.dashboard-root .menu:hover {
+  color: rgb(245, 104, 52);
+}
+
+.dashboard-root .profile:hover {
+  cursor: pointer;
+}
+
+.dashboard-root .profile:hover .username {
+  color: rgb(223, 91, 43);
+}
+
+/* Topbar, Watchlist, Summary, etc. also prefixed */
+.dashboard-root .topbar-container { width: 100%; height: 10vh; display: flex; align-items: center; box-shadow: 0px 0px 4px 2px rgb(236, 235, 235); box-sizing: border-box; z-index: 9; }
+.dashboard-root .indices-container { flex-basis: 32%; height: 100%; padding: 10px 20px; border-right: 1px solid rgb(224, 224, 224); box-sizing: border-box; display: flex; align-items: center; justify-content: space-around; }
+.dashboard-root .nifty, .dashboard-root .sensex { flex-basis: 40%; display: flex; align-items: center; justify-content: space-evenly; }
+.dashboard-root .nifty > *, .dashboard-root .sensex > * { margin-right: 8px; }
+.dashboard-root .index { font-size: 0.8rem; font-weight: 500; text-transform: uppercase; color: rgb(97, 97, 97); white-space: nowrap; }
+.dashboard-root .index-points { font-size: 0.8rem; font-weight: 500; color: rgb(223, 73, 73); }
+.dashboard-root .percent { font-size: 0.8rem; font-weight: 400; color: rgb(146, 146, 146); }
+.dashboard-root .watchlist-container { flex-basis: 32%; height: 100%; box-sizing: border-box; box-shadow: 0px 0px 4px 1px rgb(236, 235, 235); overflow-y: auto; position: relative; }
+.dashboard-root .search-container { display: flex; align-items: center; justify-content: space-evenly; position: relative; }
+.dashboard-root .search { width: 100%; height: 6%; border: none; padding: 15px 20px; font-size: 0.9rem; font-weight: 400; color: rgb(241, 241, 241); border-bottom: 0.8px solid rgb(235, 234, 234); }
+.dashboard-root .counts { position: absolute; right: 20px; font-size: 0.9rem; font-weight: 400; color: rgb(177, 177, 177); }
+.dashboard-root .list { list-style-type: none; padding-bottom: 12%; }
+.dashboard-root .list li { border-bottom: 0.8px solid rgb(235, 234, 234); padding: 12px 10px 12px 14px; position: relative; }
+.dashboard-root .item { display: flex; align-items: center; justify-content: space-between; font-weight: 300; font-size: 0.8rem; position: relative; }
+.dashboard-root .item-info { display: flex; justify-content: space-evenly; align-items: center; }
+.dashboard-root .item-info > * { margin-right: 8px; }
+.dashboard-root .item-info span:nth-child(1) { color: rgb(141, 141, 141); flex: 1; }
+.dashboard-root .item-info span:nth-child(2) { color: rgb(223, 73, 73); margin-right: 12px; flex: 2; }
+.dashboard-root .item-info span:nth-child(3) { color: rgb(223, 73, 73); flex: 1; }
+.dashboard-root .actions { position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: flex-end; display: none; }
+.dashboard-root .actions span button { width: 40px; height: 30px; border-radius: 4px; text-align: center; margin-right: 8px; cursor: pointer; }
+.dashboard-root .buy { background-color: #4184f3; color: #fff; font-weight: 400; font-size: 0.8rem; border: 0.7px solid #4184f3; }
+.dashboard-root .sell { background-color: #ff5722; color: #fff; font-weight: 400; font-size: 0.8rem; border: 0.7px solid #ff5722; }
+.dashboard-root .action { background-color: #fff; border: 0.7px solid #9b9b9b; }
+.dashboard-root .icon { transform: scale(0.7); color: rgb(65, 65, 65); }
+.dashboard-root .watchlist-number { height: 6%; width: 32%; box-sizing: border-box; position: fixed; display: inline-flex; align-items: center; justify-content: space-between; bottom: 1px; padding: 20px 20px 20px 0; left: 0; border: 1px solid rgb(231, 231, 231); z-index: 5; background: #fff; }
+.dashboard-root .watchlist-number ul { list-style-type: none; }
+.dashboard-root .watchlist-number ul li { display: inline-block; padding: 10px 20px; border-right: 1px solid rgb(231, 231, 231); }
+.dashboard-root .watchlist-number ul li:nth-child(1) { color: rgb(223, 73, 73); }
+.dashboard-root .down { color: rgb(223, 73, 73); }
+.dashboard-root .up { color: rgb(103, 201, 136); }
+.dashboard-root .settings { transform: scale(0.8); color: rgb(105, 105, 105); }
+.dashboard-root .search:focus { outline: none; }
+.dashboard-root .list li:hover { cursor: move; background-color: #f3f3f3; }
+.dashboard-root .list li:hover > .actions { display: flex; cursor: move; }
+.dashboard-root .list li::before { content: ""; background: transparent; width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+.dashboard-root .watchlist-number ul li:hover { color: rgb(245, 104, 52); cursor: pointer; background: rgb(243, 243, 243); }
+.dashboard-root .settings:hover { cursor: pointer; }
+.dashboard-root .action:hover { background-color: rgb(212, 212, 212); }
+.dashboard-root .dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 120px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  z-index: 999;
+}
+
+.dashboard-root .logout-btn {
+  margin: 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.dashboard-root .logout-btn:hover {
+  color: red;
+}
